@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoardKeep Privacy Policy · HoardKeep</title>
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><a href="../"><img src="../icon.png" alt="" width="32" height="32"> HoardKeep</a></header>
+<main class="doc">
+<h1>HoardKeep Privacy Policy</h1>
+<p><em>Last updated: November 25, 2026</em></p>
+<p>HoardKeep is a free app for keeping track of your trading card collection, decks and games. It has no accounts, no ads and no tracking. This page explains what stays on your device, what the app sends over the internet, and why.</p>
+<h2>The short version</h2>
+<ul><li><strong>Your collection, decks, games, friends and settings are stored only on your device.</strong> HoardKeep has no server and we never receive them.</li><li>The app looks up card information on public card databases. Those requests contain card names or searches, not anything about you.</li><li>A few optional features send data somewhere <strong>you</strong> choose: an AI provider you set up with your own key, or a folder you pick for syncing or sharing.</li><li>We don't sell data, show ads, or use analytics or tracking tools.</li></ul>
+<h2>What's stored on your device</h2>
+<p>Everything you put into HoardKeep stays in the app's storage on your device: your collection (including condition, language and what you paid), storage boxes and binders, decks and their history, your wishlist, games and player profiles, friends and trade proposals, and your settings.</p>
+<p>If you use the optional AI advisor, your API key is kept in your device's secure storage (Keychain on iPhone, Keystore on Android). It is never put in backups or sync files.</p>
+<p>Removing the app deletes all of this. Export a backup first (Settings → Backup &amp; restore) if you want to keep it.</p>
+<h2>What the app sends over the internet</h2>
+<p><strong>Card information.</strong> To search for cards, show card images and prices, and check decks, HoardKeep contacts these public services:</p>
+<ul><li><strong>Scryfall</strong> (scryfall.com): card search, card details, images, prices and sets. Requests contain card names, search terms or card ids.</li><li><strong>Commander Spellbook</strong> (commanderspellbook.com): finding combos in a deck. Requests contain the deck's card names.</li><li><strong>MTGJSON</strong> (mtgjson.com): lists of preconstructed decks.</li></ul>
+<p>These services receive your device's IP address, as with any internet request, and the app identifies itself as "HoardKeep". They don't receive your name, contacts, location or any other personal information from HoardKeep. Their own privacy policies apply.</p>
+<p><strong>Card scanning.</strong> When you scan cards or QR codes, the camera image is read on your device using Google's ML Kit. Camera images and what's read from them are <strong>not</strong> sent anywhere or saved. ML Kit may send Google basic diagnostic information (device model, operating system version, app version, and how well the scanner performs) to keep it working. See Google's <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>.</p>
+<p><strong>The AI deck advisor (optional, off by default).</strong> If you turn it on and choose an online provider (Anthropic's Claude or OpenAI's ChatGPT), HoardKeep asks your permission before sending anything. When you ask for advice, it sends that provider, using your own API key, the deck's name, commander and card list, the cards you own that could fit it, and any goal or deck notes you wrote. Nothing else is sent. The provider handles this under its own privacy policy and your API account's terms. If you choose a model running on your own computer (Ollama or LM Studio), the data stays on your network.</p>
+<p>If you report an AI answer, the report contains the reason you chose, any note you typed, and the text of that answer. It doesn't include your deck or anything else.</p>
+<p><strong>Sync, playgroup sharing and friends (optional).</strong></p>
+<ul><li><strong>Sync</strong> writes a copy of your HoardKeep data to a folder you choose (for example a OneDrive, Dropbox, Google Drive or iCloud Drive folder), so your other devices can read it.</li><li><strong>Playgroup sharing</strong> writes a small file to a folder you share with friends. It contains the name you choose, your color, the cards you own and how many (and which are in trade binders), your wishlist, and trade proposals with friends. Your decks, prices, notes and everything else stay private.</li><li><strong>Friend codes and trade proposals</strong> are passed directly between you and a friend, as a QR code or a message you send. A friend code contains your player name, color, an app id, and the name of your playgroup folder if you share one.</li></ul>
+<p>The folder or messaging service you use handles these files under its own terms. HoardKeep never uploads them anywhere else.</p>
+<p><strong>Backups</strong> are files you save and keep yourself.</p>
+<h2>Children</h2>
+<p>HoardKeep isn't directed at children under 13, and we don't knowingly collect information from anyone. Since HoardKeep doesn't collect personal information at all, there's nothing for us to delete.</p>
+<h2>Your choices</h2>
+<ul><li>Use the app without any of the optional features. Collection, decks and games all work without them.</li><li>Turn the AI advisor off or switch to a local model at any time (Settings → AI deck advisor). "Ask me before sending again" resets your permission.</li><li>Stop syncing or sharing at any time, and delete the files from the folder.</li><li>Delete everything by removing the app.</li></ul>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new date.</p>
+<h2>Contact</h2>
+<p>Questions or requests? Open an issue at <a href="https://github.com/CIbarra310/mtg-vault-releases/issues">github.com/CIbarra310/mtg-vault-releases/issues</a>.</p>
+<hr>
+<p>HoardKeep is unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+</main>
+</body>
+</html>
