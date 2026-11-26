@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How HoardKeep works out a deck&#x27;s bracket · HoardKeep</title>
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="bar"><a href="../"><img src="../icon.png" alt="" width="32" height="32"> HoardKeep</a></header>
+<main class="doc">
+<h1>How HoardKeep works out a deck's bracket</h1>
+<p><em>Last updated: November 26, 2026</em></p>
+<p>HoardKeep shows every Commander deck's bracket, from 1 (Exhibition) to 5 (cEDH). It measures two different things and shows the higher one: what the bracket rules say the deck <strong>contains</strong>, and how strong it actually <strong>plays</strong>. In the app, open a deck, tap <strong>Analyze</strong>, then <strong>How is this calculated?</strong> to see these numbers worked through for that deck.</p>
+<h2>1. The bracket rules (a minimum)</h2>
+<p>Wizards of the Coast's Commander brackets set rules about what a deck may contain. Any one of these puts a deck in at least that bracket, however it plays:</p>
+<ul><li><strong>1–3 Game Changers:</strong> Bracket 3</li><li><strong>4 or more Game Changers:</strong> Bracket 4</li><li><strong>A late two-card combo, or one that needs a little setup:</strong> Bracket 3</li><li><strong>An early two-card combo</strong> (both cards total 6 mana or less): Bracket 4</li><li><strong>Mass land denial:</strong> Bracket 4</li><li><strong>Extra turns that chain together:</strong> Bracket 4</li></ul>
+<p>The Game Changers list, combos, land denial and extra turns come from <a href="https://commanderspellbook.com">Commander Spellbook</a>, which checks the whole deck list. Single extra-turn cards are fine in any bracket.</p>
+<h2>2. The power index (how it plays)</h2>
+<p>The rules can't tell a precon from a finely tuned deck that follows them too. The power index estimates that from ten signals that make decks faster and more consistent. Each one gets a score from 0% to 100%, times its weight, and the total goes on a 1.0–5.0 scale:</p>
+<p><strong>power index = 1 + 4 × (sum of score × weight)</strong></p>
+<p>The scale is split into five equal zones, one per bracket:</p>
+<ul><li><strong>1.0–1.8:</strong> Bracket 1, Exhibition</li><li><strong>1.8–2.6:</strong> Bracket 2, Core</li><li><strong>2.6–3.4:</strong> Bracket 3, Upgraded</li><li><strong>3.4–4.2:</strong> Bracket 4, Optimized</li><li><strong>4.2–5.0:</strong> Bracket 5, cEDH</li></ul>
+<h2>The ten signals</h2>
+<ul><li><strong>Tutors (15%):</strong> cards that search your library for a specific nonland card. 10 or more scores 100%.</li><li><strong>Speed (14%):</strong> average mana value of nonland cards. 2.0 or less scores 100%, 4.0 or more scores 0%.</li><li><strong>Fast mana (14%):</strong> mana rocks and rituals costing 0–1 (Sol Ring, Dark Ritual), not mana creatures. 10 or more scores 100%.</li><li><strong>Game Changers (12%):</strong> cards on Wizards' Game Changers list. 8 or more scores 100%.</li><li><strong>Interaction (10%):</strong> targeted removal, counterspells and board wipes. 15 or more scores 100%.</li><li><strong>Combos (8%):</strong> two-card combos from Commander Spellbook. An early one scores 100%, a late one 50%, one that needs extra setup 25%.</li><li><strong>Mana base (8%):</strong> the share of lands you can use the turn you play them (basics, shock, check, fast and fetch lands). 60% or fewer scores 0%, all of them 100%.</li><li><strong>Card quality (7%):</strong> how popular the typical card is across Commander decks (EDHREC rank, via Scryfall). A median card in the top 100 scores 100%, outside the top 10,000 scores 0%. Kept light because strong decks often play niche cards.</li><li><strong>Ramp (6%):</strong> mana rocks, mana creatures and land search. 12 or more scores 100%.</li><li><strong>Card draw (6%):</strong> repeatable draw engines (Rhystic Study, Skullclamp) count fully; one-shot draw (Divination, "when this enters, draw a card") counts a quarter each. 8 engines scores 100%.</li></ul>
+<h2>Why a deck can show two different brackets</h2>
+<p>A precon with one clunky combo can be <strong>Bracket 3 by the rules</strong> while it <strong>plays like Bracket 2</strong>. The app shows Bracket 3, because the rules set the minimum, and explains that it plays like a 2. Cutting one of the combo pieces brings it back to Bracket 2. Either way, it's a good thing to mention when your playgroup talks about decks before a game.</p>
+<h2>How it was tuned</h2>
+<p>The weights were fitted to real decks:</p>
+<ul><li>117 Commander precons, which Wizards rates nearly all Bracket 2;</li><li>three cEDH decks (Bracket 5);</li><li>a precon upgraded in four realistic steps.</li></ul>
+<p>Today 115 of the 117 precons land in the Bracket 2 zone, and the cEDH decks score 4.1–4.7. Each upgrade step (better lands, card draw, interaction, then Game Changers and tutors) raises the index, and the fully upgraded precon ends in Bracket 3.</p>
+<h2>What it can't see</h2>
+<p>It counts kinds of cards, not how good each one is or how well they work together. Swapping a creature for a much better one at the same cost, tighter synergy or a cleaner win condition barely moves it. Treat it as a guide for comparing and upgrading decks, and talk to your playgroup: the brackets are meant to start that conversation.</p>
+<hr>
+<p>HoardKeep is unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC. Combo data from Commander Spellbook; card data from Scryfall.</p>
+</main>
+</body>
+</html>
